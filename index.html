@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ken Mori</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.cdnfonts.com/css/monofonto" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/creato-display" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <header>
+          <div class="logo">
+          <img src="logo.png" alt="">
+          </div>
+        <nav>
+      <ul>
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#hobbies">HOBBIES</a></li>
+        <li><a href="#education">EDUCATION</a></li>
+        <li><a href="#skills">SKILLS</a></li>
+        <li class="dropdown">
+          <a href="#gallery">GALLERY ▼</a>
+            <ul class="dropdown-menu">
+        <li>
+          <a href="#gallery" onclick="showGallery('banner', document.querySelector('.gallery-tabs .tab-btn:nth-child(1)'))">
+          BANNER
+          </a>
+        </li>
+        <li>
+          <a href="#gallery" onclick="showGallery('poster', document.querySelector('.gallery-tabs .tab-btn:nth-child(3)'))">
+           POSTER
+        </a>
+        </li>
+    </ul>
+        <li><a href="#feedback">FEEDBACK</a></li>
+       <li><a href="#contact">CONTACT</a></li>
+  </ul>
+</nav>
+
+  </header>
+      <section id="home" class="intro">
+        <div class="background"></div>
+          <div class="mori">
+           <img src="Mori.png" alt="Mori">
+        </div>
+
+    <div class="intro-content">
+      <h1>HI, I'M KEN MORI, A 2ND-YEAR BSCS STUDENT AT COLUMBAN COLLEGE INC.</h1>
+        <button onclick="location.href='#hobbies'">READ MORE</button>
+      </div>
+</section>
+      <section id="hobbies" class="hobbies">
+        <h1>
+          <img src="Hicon.png" alt="Hobby Icon" class="hobby-title-icon">
+           My Hobbies
+        </h1>
+
+  <div class="hobby-row">
+    <div class="hobby-box">
+      <div class="hobby-images">
+        <img src="magnus.png" alt="Photo Editing">
+      </div>
+      <div class="hobby-content">
+        <div class="hobby-icons"><img src="ps.png" alt="Photoshop Logo"></div>
+        <div class="hobby-text">
+          <h2>Photo Editing</h2>
+          <p>I enjoy photo editing in Photoshop, especially creating banners, movie posters, and esports graphics to bring creative concepts to life.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="hobby-box">
+      <div class="hobby-content">
+        <div class="hobby-icons"><img src="music.png" alt="music-icon">
+        </div>
+        <div class="hobby-text">
+          <h2>Listening to Music</h2>
+          <p>Listening to music is one of my hobbies because it helps me relax, boosts my mood, and inspires me in my daily life.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hobby-row">
+    <div class="hobby-box">
+      <div class="hobby-content">
+        <div class="hobby-icons"><img src="movie.png" alt="Movie Icon"></div>
+        <div class="hobby-text">
+          <h2>Watching Movies/Series</h2>
+          <p>Watching movies and series is one of my hobbies because it entertains me and lets me explore different stories.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="hobby-box">
+      <div class="hobby-images">
+        <img src="games.png" alt="Games">
+      </div>
+      <div class="hobby-content">
+        <div class="hobby-icons"><img src="controller.png" alt="Controller Icon"></div>
+        <div class="hobby-text">
+          <h2>Playing Online Games</h2>
+          <p>Online gaming is my favorite hobby, and I enjoy playing 2K25, Roblox, Tekken 8, Valorant, HoK, and Genshin Impact for fun and social connection.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ <section id="education" class="education">
+    <h1>
+      <img src="grad.png" alt="Education Icon" class="edu-title-icon" />
+      My Education
+    </h1>
+
+    <div class="edu-box">
+      <div class="edu-images">
+        <img src="school.png" alt="Columban College Front" />
+      </div>
+      <div class="edu-content">
+        <h2>Columban College Inc.</h2>
+        <p>
+          I've been a student at Columban College Inc. since Kinder 1, continuing through elementary, highschool, senior high, and now as a 2nd-year college student even during the pandemic. It's been a constant part of my life and growth throughout every stage of my education.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="skills" class="skills">
+    <h1>
+    <img src="Myskills.png" alt="Skills Icon" class="skills-title-icon">
+    My Skills
+    </h1>
+    <div class="skill-box">
+
+  
+    <div class="skills-buttons">
+      <button class="skill-btn active" onclick="showSkill(1)">SKILL 1</button>
+      <button class="skill-btn" onclick="showSkill(2)">SKILL 2</button>
+      <button class="skill-btn" onclick="showSkill(3)">SKILL 3</button>
+    </div>
+
+
+    <div class="skill-content active" id="skill1">
+      <div class="skill-inner">
+        <div class="skill-image">
+          <img src="skill1.png" alt="Skill 1">
+        </div>
+        <div class="skill-details">
+          <span class="skill-number">01</span>
+          <h2><img src="im1.png" class="skill-icon"> Photo Editing Skills</h2>
+          <p>I have growing experience in Adobe Photoshop, particularly in creating banners and posters,
+             where I feel most confident. I'm also creative when approaching design task and enjoy bringing visual ideas to life. While I have
+             some experience in photo manipulation, I'm still learning and improving in more 
+             advanced areas like using layers and masking techniques</p>
+          <div class="skill-stats">
+            <div class="stat-box">60 % <br><small>Creativeness</small></div>
+            <div class="stat-box">50 % <br><small>Photo Manipulation</small></div>
+            <div class="stat-box">80 % <br><small>Banner/Poster Design</small></div>
+            <div class="stat-box">70 % <br><small>Layers Techniques</small></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="skill-content" id="skill2">
+      <div class="skill-inner">
+        <div class="skill-image">
+          <img src="skill2.png" alt="Skill 2">
+        </div>
+        <div class="skill-details">
+          <span class="skill-number">02</span>
+          <h2><img src="im2.png" class="skill-icon"> Video Editing Skills</h2>
+          <p>I have growing experience in video editing, with a focus on creating engaging
+             and visually appealing content. I enjoy experimenting with transitions, timing,
+             and music to enhance the storytelling. My style leans on creativity and clean,
+             dynamic edits suitable for short form and highlight contents.
+          </p>
+          <div class="skill-stats">
+            <div class="stat-box">60 % <br><small>Creativeness</small></div>
+            <div class="stat-box">40 % <br><small>Transitions</small></div>
+            <div class="stat-box">50 % <br><small>Visuals & Music</small></div>
+            <div class="stat-box">40 % <br><small>Visual effects</small></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="skill-content" id="skill3">
+      <div class="skill-inner">
+        <div class="skill-image">
+          <img src="skill3.png" alt="Skill 3">
+        </div>
+        <div class="skill-details">
+          <span class="skill-number">03</span>
+          <h2><img src="im3.png" class="skill-icon">Coding Skills</h2>
+          <p>I'm still developing my coding skills and learning through hands on
+             practice. I've been exploring multilple programming languages and enjoy
+             understanding how each one works, even though I'm still at a beginner
+             level.
+          </p>
+          <div class="skill-stats">
+            <div class="stat-box">30 % <br><small>HTML & CSS</small></div>
+            <div class="stat-box">10 % <br><small>C Programming</small></div>
+            <div class="stat-box">30 % <br><small>Java</small></div>
+            <div class="stat-box">20 % <br><small>Python</small></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<script>
+
+  function showSkill(skillNumber) {
+    const contents = document.querySelectorAll('.skill-content');
+    const buttons = document.querySelectorAll('.skill-btn');
+
+    contents.forEach(content => content.classList.remove('active'));
+    buttons.forEach(button => button.classList.remove('active'));
+
+    document.getElementById(`skill${skillNumber}`).classList.add('active');
+    buttons[skillNumber - 1].classList.add('active');
+}
+</script>
+
+<section id="gallery" class="gallery">
+  <div class="gallery-header">
+    <h1><span>GALLERY</span></h1>
+  </div>
+
+  <div class="gallery-tabs">
+    <button class="tab-btn active" onclick="showGallery('banner', this)">BANNER</button>
+    <span class="separator"></span>
+    <button class="tab-btn" onclick="showGallery('poster', this)">POSTER</button>
+  </div>
+
+
+  <div class="gallery-content active" id="banner">
+    <div class="gallery-grid">
+      <img src="banner1.png" alt="Banner 1">
+      <img src="banner2.png" alt="Banner 2">
+      <img src="banner3.png" alt="Banner 3">
+      <img src="banner4.png" alt="Banner 4">
+    </div>
+  </div>
+
+
+<div class="gallery-content" id="poster">
+  <div class="poster-grid">
+    <img id="poster1" src="poster1.png" alt="Poster 1">
+    <img id="poster2" src="poster2.png" alt="Poster 2">
+    <img id="poster3" src="poster3.png" alt="Poster 3">
+  </div>
+</div>
+</section>
+
+<script>
+
+function showGallery(type, btn) {
+  
+  document.querySelectorAll(".gallery-content").forEach(el => el.classList.remove("active"));
+  document.getElementById(type).classList.add("active");
+
+  document.querySelectorAll(".tab-btn").forEach(el => el.classList.remove("active"));
+  btn.classList.add("active");
+}
+
+</script>
+
+
+<section id="feedback" class="feedback">
+  <h1>What Our Client Say</h1>
+  <div class="carousel-container">
+    <div class="carousel-track">
+      
+  
+      <div class="feedback-card">
+        <div class="stars">★★★★★</div>
+        <p>"Your poster designs are eye-catching and creative really impressive work!"</p>
+        <div class="client">
+          <img src="client1.png" alt="client">
+          <h3>Josh M</h3>
+        </div>
+      </div>
+
+      <div class="feedback-card">
+        <div class="stars">★★★★★</div>
+        <p>"Engaging design that communicates the idea effectively."</p>
+        <div class="client">
+          <img src="client2.jpg" alt="client">
+          <h3>Kio R</h3>
+        </div>
+      </div>
+
+      <div class="feedback-card">
+        <div class="stars">★★★★★</div>
+        <p>"Clear message with strong visual appeal."</p>
+        <div class="client">
+          <img src="client3.jpg" alt="client">
+          <h3>Nix S</h3>
+        </div>
+      </div>
+
+      <div class="feedback-card">
+        <div class="stars">★★★★★</div>
+        <p>"I love the style of your banners. Clean, bold, and very professional-looking."</p>
+        <div class="client">
+          <img src="client4.jpg" alt="client">
+          <h3>Dar D</h3>
+        </div>
+      </div>
+
+      <div class="feedback-card">
+        <div class="stars">★★★★★</div>
+        <p>"Neat design with excellent color harmony."</p>
+        <div class="client">
+          <img src="client5.jpg" alt="client">
+          <h3>Eul O</h3>
+        </div>
+      </div>
+
+      <div class="feedback-card">
+        <div class="stars">★★★★★</div>
+        <p>"Simple yet impactful layout for easy recognition."</p>
+        <div class="client">
+          <img src="client6.jpg" alt="client">
+          <h3>Pat R</h3>
+        </div>
+      </div>
+
+      <div class="feedback-card">
+        <div class="stars">★★★★★</div>
+        <p>"Bold and readable, perfect for quick viewing."</p>
+        <div class="client">
+          <img src="client7.jpg" alt="client">
+          <h3>Ant D</h3>
+        </div>
+      </div>
+
+    
+      <div class="feedback-card">
+        <div class="stars">★★★★★</div>
+        <p>"Your poster designs are eye-catching and creative really impressive work!"</p>
+        <div class="client">
+          <img src="client1.png" alt="client">
+          <h3>Josh M</h3>
+        </div>
+      </div>
+
+      <div class="feedback-card">
+        <div class="stars">★★★★★</div>
+        <p>"Engaging design that communicates the idea effectively.</p>
+        <div class="client">
+          <img src="client2.jpg" alt="client">
+          <h3>Kio R</h3>
+        </div>
+      </div>
+
+      <div class="feedback-card">
+        <div class="stars">★★★★★</div>
+        <p>"Clear message with strong visual appeal."
+        </p>
+        <div class="client">
+          <img src="client3.jpg" alt="client">
+          <h3>Nix S</h3>
+        </div>
+      </div>
+
+      <div class="feedback-card">
+        <div class="stars">★★★★★</div>
+        <p>"I love the style of your banners. Clean, bold, and very professional-looking."</p>
+        <div class="client">
+          <img src="client4.jpg" alt="client">
+          <h3>Dar D</h3>
+        </div>
+      </div>
+
+      <div class="feedback-card">
+        <div class="stars">★★★★★</div>
+        <p>"Neat design with excellent color harmony."</p>
+        <div class="client">
+          <img src="client5.jpg" alt="client">
+          <h3>Eul O</h3>
+        </div>
+      </div>
+
+      <div class="feedback-card">
+        <div class="stars">★★★★★</div>
+        <p>"Simple yet impactful layout for easy recognition."</p>
+        <div class="client">
+          <img src="client6.jpg" alt="client">
+          <h3>Pat R</h3>
+        </div>
+      </div>
+
+      <div class="feedback-card">
+        <div class="stars">★★★★★</div>
+        <p>"Bold and readable, perfect for quick viewing."</p>
+        <div class="client">
+          <img src="client7.jpg" alt="client">
+          <h3>Ant D</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<script>
+
+const track = document.querySelector('.carousel-track');
+const cards = document.querySelectorAll('.feedback-card');
+const prevBtn = document.querySelector('.prev');
+const nextBtn = document.querySelector('.next');
+
+let index = 0;
+let cardsPerView = getCardsPerView();
+
+function getCardsPerView() {
+  if (window.innerWidth <= 600) return 1;
+  if (window.innerWidth <= 992) return 2;
+  return 3;
+}
+
+function updateCarousel() {
+  track.style.transform = `translateX(-${index * (100 / cardsPerView)}%)`;
+}
+
+nextBtn.addEventListener('click', () => {
+  if (index < cards.length - cardsPerView) {
+    index++;
+  } else {
+    index = 0; // loop back
+  }
+  updateCarousel();
+});
+
+prevBtn.addEventListener('click', () => {
+  if (index > 0) {
+    index--;
+  } else {
+    index = cards.length - cardsPerView;
+  }
+  updateCarousel();
+});
+
+// Auto-slide
+setInterval(() => {
+  if (index < cards.length - cardsPerView) {
+    index++;
+  } else {
+    index = 0;
+  }
+  updateCarousel();
+}, 5000);
+
+// Recalculate on resize
+window.addEventListener('resize', () => {
+  cardsPerView = getCardsPerView();
+  index = 0;
+  updateCarousel();
+});
+
+</script>
+
+<footer id="contact" class="contact-footer">
+  <div class="contact-container">
+    <h2>Contact Us</h2>
+
+    <div class="contact-columns">
+      <div class="contact-column">
+        <h3>Our Address :</h3>
+        <p>
+          <img src="gps.png" alt="Location Icon" class="icon">
+          #163 Lower Kalaklan Olongapo City
+        </p>
+        <p>
+          <img src="gps.png" alt="Location Icon" class="icon">
+          #1 First St. New Asinan Olongapo City
+        </p>
+      </div>
+
+      <div class="contact-column">
+        <h3>You may reach us at :</h3>
+        <p>
+          <img src="fb.png" alt="User Icon" class="icon">
+          Ken Mori
+        </p>
+        <p>
+          <img src="email.png" alt="Email Icon" class="icon">
+          kenmori@gmail.com
+        </p>
+      </div>
+
+      <div class="contact-column">
+        <h3>Phone Number :</h3>
+        <p>
+          <img src="phone.png" alt="Phone Icon" class="icon">
+          +63 9872627632
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>All Rights Reserved © 2025</p>
+  </div>
+
+</footer>
+
+</body>
+
+</html>
+
